@@ -7,7 +7,7 @@ puts 'This script will create your project in the directory it is ran in!'
 puts '          What would you like to call your project? '
 puts '---------------------------------------------------------------------'
 project_name = gets.chomp
-project_root = '../' + project_name
+project_root = project_name
 
 lib_path = FileUtils.mkdir_p project_root + '/lib/'
 spec_path = FileUtils.mkdir_p project_root + '/spec/'
